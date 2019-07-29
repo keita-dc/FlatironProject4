@@ -1,4 +1,4 @@
-# Taxi in DC -To tip or not to tip: That is the question
+# Taxi in DC -To tip or not to tip, that is the question
 
 ## Objectives
 We analyze the taxi trips data in DC. We aim to figure out what determine the fare and tips. 
