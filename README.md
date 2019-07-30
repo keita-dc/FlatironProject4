@@ -12,4 +12,4 @@ We use "Taxicab Trips Sampling in July 2017" provided by the DC Government, whic
 ### Data Cleaning
 We filter out taxi trips with distance over 100 miles, total fare over 1,000 dollars, or trip duration over two hours, because we aim to analyze taxi trips in DC and adjacent areas but not inter-regional trips. We also filtered out trips with average mileage per minute over 2 (we may see high numbers due to rounding errors of trip duration which is measured in minute, but believe numbers beyond 2 would be unreasonable).
 
-## General Description od Dataset
+## General Description of Dataset
