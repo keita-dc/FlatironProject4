@@ -57,10 +57,19 @@ From longitude and latitude data, we calculated distance from the Capitol and in
 
 ### Tipping Probability Time Series Analysis
 
-
-
-
+We also looked at time-varying aspect of tipping probability. Plotting the probability of tipping by hour, we found that the customes look to be less likely to tip early in the morning everyday.
 
 ![Figure Share of Trips with Tip](image/tipping_overtime.png "Share of Trips with Tip")
+
+We decompose the observations into trend, seasonality, and error components, and we confirmed that a certain seasonality exists in the dataset.
+
+![Figure Share of Trips with Tip Decomposition](image/time_series_decomposition.png "Share of Trips with Tip Decomposition")
+
+We ran a SARIMA model with parameters specified by grid-searching. The regression result indicates some autoregressive and moving-avarage characteristics as well as seasonality components of the data.
+
+![Table SARIMA Model](image/sarima_summary.png "SARIMA Model")
+
+
+
 
 
