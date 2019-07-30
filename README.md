@@ -24,10 +24,19 @@ Our analysis section comprizes three segments: OLS regression analysis of meterf
 ### Meterfare and Trop Mileage
 It is obvious that trip mileage is the most important determinant of meterfare. Simply regressing meterfare on trip mileage, we obtain a coefficient of 1.98 (US dollars) per mileage with a constant of 5.89 (US dollars).
 
-![OLS Regression of Meterfare](image/ols_meterfare_tripmileage.png "OLS Metefare on Trip Mileage")
+![OLS Regression of Meterfare](image/ols_meterfare_tripmileage.png "OLS Meterfare on Trip Mileage")
 
-Yet as the following scatter plot indicates, there are two distinct fitted lines with different slopes.
+Yet as the following scatter plot indicates, there are two distinct fitted lines with different slopes. It is not good enough to simplly regress meterfare on trip mileage.
 
-![Figure Meterfare vs Mileage](image/meterfare_all.png "Metefare vs Trip Mileage")
+![Figure Meterfare vs Mileage](image/meterfare_all.png "Meterfare vs Trip Mileage")
+
+We figured out that service providers explain the difference in slopes of two groups, by adding a dummy variable for DC Yellow Cab company and its interaction term with trip mileage. A negative coefficient on the interaction term indicates a flatter slope for Yellow Cabs.
+
+![OLS Regression of Meterfare with Yellow Cab Dummy](image/ols_meterfare_tripmileage_yellowcab.png "OLS Meterfare on Trip Mileage with Yellow Cab Dummy")
+
+In the following chart, DC Yellow Cab is represented by dots along with the flatter slope (yellow), and all other providers are represented by dots around the steeper slope (blue).
+
+![Figure Meterfare vs Mileage Yellow Cab](image/meterfare_yellowcab.png "Meterfare vs Trip Mileage, Yellow Cab and Others")
+
 
 
