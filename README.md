@@ -21,7 +21,7 @@ The following columns were created to help with analysis: pickup_date(derived fr
 ## Analysis
 Our analysis section comprizes three segments: OLS regression analysis of meterfare and trip mileage, logistic regression analysis of tipping probability, and time-series analysis of tipping probability.
 
-### Meterfare and Trop Mileage
+### Meterfare and Trip Mileage
 It is obvious that trip mileage is the most important determinant of meterfare. Simply regressing meterfare on trip mileage, we obtain a coefficient of 1.98 (US dollars) per mileage with a constant of 5.89 (US dollars).
 
 ![OLS Regression of Meterfare](image/ols_meterfare_tripmileage.png "OLS Meterfare on Trip Mileage")
@@ -30,13 +30,19 @@ Yet as the following scatter plot indicates, there are two distinct fitted lines
 
 ![Figure Meterfare vs Mileage](image/meterfare_all.png "Meterfare vs Trip Mileage")
 
-We figured out that service providers explain the difference in slopes of two groups, by adding a dummy variable for DC Yellow Cab company and its interaction term with trip mileage. A negative coefficient on the interaction term indicates a flatter slope for Yellow Cabs.
+We figured out that service providers explain the difference in slopes of two groups, by adding a dummy variable for DC Yellow Cab company and its interaction term with trip mileage. A negative coefficient (-83 cents per mileage) on the interaction term indicates a flatter slope (1.41 dollars per mile) for Yellow Cabs  than that for others (2.24 dollars per mileage) and is statistically significant.
 
 ![OLS Regression of Meterfare with Yellow Cab Dummy](image/ols_meterfare_tripmileage_yellowcab.png "OLS Meterfare on Trip Mileage with Yellow Cab Dummy")
 
 In the following chart, DC Yellow Cab is represented by dots along with the flatter slope (yellow), and all other providers are represented by dots around the steeper slope (blue).
 
 ![Figure Meterfare vs Mileage Yellow Cab](image/meterfare_yellowcab.png "Meterfare vs Trip Mileage, Yellow Cab and Others")
+
+### Tipping Probability
+To tip or not to tip, that is the question. Tipping is sometimes confusing; people sometimes tip and other times they don't. Within our sample group, slightly more than half of the observations came without tip. Among observations with tip the median tip-to-meterfare ratio is around 23%.
+
+![Figure Tipping vs Meterfare Histgram](image/tip-meterfare_hist.png "Tipping Histgram over Meterfare")
+
 
 
 
