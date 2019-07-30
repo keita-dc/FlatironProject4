@@ -1,7 +1,7 @@
 # Taxi in DC -To tip or not to tip, that is the question
 
 ## Objectives
-We analyze the taxi trips data in DC. We aim to figure out what determine the fare and tips. 
+Despite the popularity of Uber and Lyft, taxicabs are still relevant today. Unlike Uber or Lyft, taxicabs are able to accept cash, do not require a smartphone for reservations, and are easily identified on the streets. These differences allow taxicabs to remain in demand. Our objective is to analyze the taxi trips data in DC and figure out what determines the fares and tips.
 
 ## Contributors
 Emefa Agodo and Keita Miyaki
