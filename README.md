@@ -26,7 +26,7 @@ It is obvious that trip mileage is the most important determinant of meterfare. 
 
 ![OLS Regression of Meterfare](image/ols_meterfare_tripmileage.png "OLS Meterfare on Trip Mileage")
 
-Yet as the following scatter plot indicates, there are two distinct fitted lines with different slopes. It is not good enough to simplly regress meterfare on trip mileage.
+Yet as the following scatter plot indicates, there are two distinct fitted lines with different slopes. It is not good enough to simply regress meterfare on trip mileage.
 
 ![Figure Meterfare vs Mileage](image/meterfare_all.png "Meterfare vs Trip Mileage")
 
@@ -41,8 +41,26 @@ In the following chart, DC Yellow Cab is represented by dots along with the flat
 ### Tipping Probability
 To tip or not to tip, that is the question. Tipping is sometimes confusing; people sometimes tip and other times they don't. Within our sample group, slightly more than half of the observations came without tip. Among observations with tip the median tip-to-meterfare ratio is around 23%.
 
-![Figure Tipping vs Meterfare Histgram](image/tip-meterfare_hist.png "Tipping Histgram over Meterfare")
+![Figure Tipping vs Meterfare Histgram](image/tip_meterfare_hist.png "Tipping Histgram over Meterfare")
+
+We examined the determinants of probability of tipping by logistic regressions and found following; customers are more likely to tip on a trip to or from airports; customers who pay by credit cards or vouchers are more likely to tip; the longer the ride is, the less likely customers tip. Adding quadrant dummy variables, the coefficient estimaters indicate trips with drop-off locations in Northwest, SouthEast, and Southwest are more likely with tips than those to Northeast.
+
+![Logit Table 12](image/logit12.png "Logit Regressions on Tipping 1 and 2")
+
+Looking at the drop-off location plots of trips with tips and those without, we find a certain tendency that in Northeast and Southeast quadrants there are more no-tip rides around suburbs, while that trend is not obvious in Northwest. 
+
+![Figure Tip Geographical Plot](image/tipping_map.png "Geographical Plots of Tip and Non-Tip Taxi Ride Drop-off Locations")
+
+From longitude and latitude data, we calculated distance from the Capitol and included it in logistic regression model. Coefficient estimater of distance from the Capitol suggest that if the drop-off location is farther out from the city center, customers are less likely to tip. By including interaction terms of distance from the Capitol and quadrant dummies, we show that the distance from the center matters much less in Northwest quadrant in terms of likelihood of tipping than Northeast, and it matters more in Southeast quadrant. 
+
+![Logit Table 34](image/logit34.png "Logit Regressions on Tipping 3 and 4")
+
+### Tipping Probability Time Series Analysis
 
 
+
+
+
+![Figure Share of Trips with Tip](image/tipping_overtime.png "Share of Trips with Tip")
 
 
