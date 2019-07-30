@@ -22,6 +22,12 @@ The following columns were created to help with analysis: pickup_date(derived fr
 Our analysis section comprizes three segments: OLS regression analysis of meterfare and trip mileage, logistic regression analysis of tipping probability, and time-series analysis of tipping probability.
 
 ### Meterfare and Trop Mileage
-It is obvious that trip mileage is the most important determinant of meterfare. 
+It is obvious that trip mileage is the most important determinant of meterfare. Simply regressing meterfare on trip mileage, we obtain a coefficient of 1.98 (US dollars) per mileage with a constant of 5.89 (US dollars).
 
 ![OLS Regression of Meterfare](image/ols_meterfare_tripmileage.png "OLS Metefare on Trip Mileage")
+
+Yet as the following scatter plot indicates, there are two distinct fitted lines with different slopes.
+
+![Figure Meterfare vs Mileage](image/meterfare_all.png "Metefare vs Trip Mileage")
+
+
