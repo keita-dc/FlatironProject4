@@ -48,7 +48,7 @@ To tip or not to tip, that is the question. Tipping is sometimes confusing; peop
 
 ![Figure Tipping vs Meterfare Histgram](image/tip_meterfare_hist.png "Tipping Histgram over Meterfare")
 
-We examined the determinants of probability of tipping by logistic regressions and found following; customers are more likely to tip on a trip to or from airports; customers who pay by credit cards or vouchers are more likely to tip; the longer the ride is, the less likely customers tip. Adding quadrant dummy variables, the coefficient estimaters indicate trips with drop-off locations in Northwest, SouthEast, and Southwest are more likely with tips than those to Northeast.
+We examined the determinants of probability of tipping by logistic regressions and found following; customers are more likely to tip on a trip to or from airports; customers who pay by credit cards or vouchers are more likely to tip; the longer the ride is, the less likely customers tip. Adding quadrant dummy variables, the coefficient estimators indicate trips with drop-off locations in Northwest, SouthEast, and Southwest are more likely with tips than those to Northeast.
 
 ![Logit Table 12](image/logit12.png "Logit Regressions on Tipping 1 and 2")
 
