@@ -30,13 +30,18 @@ Yet as the following scatter plot indicates, there are two distinct fitted lines
 
 ![Figure Meterfare vs Mileage](image/meterfare_all.png "Meterfare vs Trip Mileage")
 
-We figured out that service providers explain the difference in slopes of two groups, by adding a dummy variable for DC Yellow Cab company and its interaction term with trip mileage. A negative coefficient (-83 cents per mileage) on the interaction term indicates a flatter slope (1.41 dollars per mile) for Yellow Cabs  than that for others (2.24 dollars per mileage) and is statistically significant.
+We figured out that service providers explain the difference in slopes of two groups, by adding a dummy variable for DC Yellow Cab company and its interaction term with trip mileage. A negative coefficient (-83 cents per mileage) on the interaction term indicates a flatter slope (1.41 dollars per mile) for Yellow Cabs than that for others (2.24 dollars per mileage) and is statistically significant.
 
 ![OLS Regression of Meterfare with Yellow Cab Dummy](image/ols_meterfare_tripmileage_yellowcab.png "OLS Meterfare on Trip Mileage with Yellow Cab Dummy")
 
 In the following chart, DC Yellow Cab is represented by dots along with the flatter slope (yellow), and all other providers are represented by dots around the steeper slope (blue).
 
 ![Figure Meterfare vs Mileage Yellow Cab](image/meterfare_yellowcab.png "Meterfare vs Trip Mileage, Yellow Cab and Others")
+
+The truth would be, however, that DC Yellow Cab company reported trip mileage in kilometers instead of miles. Indeed, 1.41 dollars per km is equivalent to 2.26 dollars per mileage, which is almost identical to the others (2.24 dollars per mileage). We concluded it as a measurement error and corrected the trip mileage for Yellow Cab.
+
+![Figure Meterfare vs Mileage Corrected](image/meterfare_all_corrected.png "Meterfare vs Trip Mileage, Yellow Cab Measurement Error Corrected")
+
 
 ### Tipping Probability
 To tip or not to tip, that is the question. Tipping is sometimes confusing; people sometimes tip and other times they don't. Within our sample group, slightly more than half of the observations came without tip. Among observations with tip the median tip-to-meterfare ratio is around 23%.
