@@ -56,7 +56,7 @@ Looking at the drop-off location plots of trips with tips and those without, we 
 
 ![Figure Tip Geographical Plot](image/tipping_map.png "Geographical Plots of Tip and Non-Tip Taxi Ride Drop-off Locations")
 
-From longitude and latitude data, we calculated distance from the Capitol and included it in logistic regression model. Coefficient estimater of distance from the Capitol suggest that if the drop-off location is farther out from the city center, customers are less likely to tip. By including interaction terms of distance from the Capitol and quadrant dummies, we show that the distance from the center matters much less in Northwest quadrant in terms of likelihood of tipping than Northeast, and it matters more in Southeast quadrant. 
+From longitude and latitude data, we calculated distance from the Capitol and included it in logistic regression model. Coefficient estimator of distance from the Capitol suggest that if the drop-off location is farther out from the city center, customers are less likely to tip. By including interaction terms of distance from the Capitol and quadrant dummies, we show that the distance from the center matters much less in Northwest quadrant in terms of likelihood of tipping than Northeast, and it matters more in Southeast quadrant. 
 
 ![Logit Table 34](image/logit34.png "Logit Regressions on Tipping 3 and 4")
 
